@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>5thTurno · Calendario de turnos rotativos</title>
+    <meta name="description" content="Calendario de turnos rotativos para 5 equipos en régimen 24/7: consulta mañana, tarde, noche, descansos y festivos de cualquier mes.">
+    <meta name="author" content="Sergio Ucedo">
+    <meta name="theme-color" content="#4B0082">
+
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="es_ES">
+    <meta property="og:title" content="5thTurno · Calendario de turnos rotativos">
+    <meta property="og:description" content="Calendario de turnos rotativos para 5 equipos en régimen 24/7: mañana, tarde, noche, descansos y festivos.">
+    <meta property="og:url" content="https://xerchion.github.io/5thTurno/">
+    <meta property="og:image" content="https://xerchion.github.io/5thTurno/img/og-image.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<main class="calendar-main">
+    <header class="app-header">
+        <h1 class="app-title">5thTurno v3.0 by <a href="https://xerchion.github.io/portfolio-web/" target="_blank" rel="noopener noreferrer">Sergio Ucedo</a></h1>
+    </header>
+
+    <div class="calendar-container">
+        <nav class="calendar-navigation" aria-label="Selección de turno, año y mes">
+            <div class="control-group">
+                <div id="turnoTitle" class="control-title turno-title" aria-live="polite">Turno C</div>
+                <div class="control-buttons">
+                    <button id="prevTurno" class="nav-button" type="button" aria-label="Turno anterior">
+                        <svg class="nav-icon" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true" focusable="false">
+                            <path fill-rule="evenodd" d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                        </svg>
+                    </button>
+                    <button id="nextTurno" class="nav-button" type="button" aria-label="Turno siguiente">
+                        <svg class="nav-icon" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true" focusable="false">
+                            <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <div class="control-group">
+                <div id="yearTitle" class="control-title year-title" aria-live="polite"></div>
+                <div class="control-buttons">
+                    <button id="prevYear" class="nav-button" type="button" aria-label="Año anterior">
+                        <svg class="nav-icon" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true" focusable="false">
+                            <path fill-rule="evenodd" d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                        </svg>
+                    </button>
+                    <button id="nextYear" class="nav-button" type="button" aria-label="Año siguiente">
+                        <svg class="nav-icon" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true" focusable="false">
+                            <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <div class="control-group">
+                <h2 id="monthTitle" class="control-title month-title" aria-live="polite"></h2>
+                <div class="control-buttons">
+                    <button id="prevMonth" class="nav-button" type="button" aria-label="Mes anterior">
+                        <svg class="nav-icon" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true" focusable="false">
+                            <path fill-rule="evenodd" d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                        </svg>
+                    </button>
+                    <button id="nextMonth" class="nav-button" type="button" aria-label="Mes siguiente">
+                        <svg class="nav-icon" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true" focusable="false">
+                            <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </nav>
+
+        <div class="calendar-grid-wrapper">
+            <div id="calendarGrid" class="calendar-grid">
+                <!-- Los días se generan en js/app.js -->
+            </div>
+        </div>
+    </div>
+
+    <section class="static-legend" aria-label="Leyenda">
+        <div class="static-legend-items">
+            <div class="static-legend-item">
+                <span class="legend-dot morning-shift"></span>
+                <span>Mañana</span>
+            </div>
+            <div class="static-legend-item">
+                <span class="legend-dot afternoon-shift"></span>
+                <span>Tarde</span>
+            </div>
+            <div class="static-legend-item">
+                <span class="legend-dot night-shift"></span>
+                <span>Noche</span>
+            </div>
+            <div class="static-legend-item">
+                <span class="legend-dot day-off"></span>
+                <span>Descanso</span>
+            </div>
+            <div class="static-legend-item">
+                <span class="legend-dot holiday-mark"></span>
+                <span>Festivo</span>
+            </div>
+            <div class="static-legend-item">
+                <span class="legend-dot today-mark"></span>
+                <span>Hoy</span>
+            </div>
+        </div>
+    </section>
+
+    <ul id="holidayList" class="holiday-list" aria-label="Festivos del mes" hidden></ul>
+
+    <noscript>
+        <p class="noscript">Este calendario necesita JavaScript para calcular los turnos.</p>
+    </noscript>
+</main>
+
+<script src="js/turnos.js"></script>
+<script src="js/festivos.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>

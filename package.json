@@ -1,0 +1,19 @@
+{
+  "name": "5thturno",
+  "version": "3.0.0",
+  "description": "Calendario de turnos rotativos para 5 equipos en régimen 24/7",
+  "private": true,
+  "license": "MIT",
+  "author": "Sergio Ucedo",
+  "homepage": "https://xerchion.github.io/5thTurno/",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xerchion/5thTurno.git"
+  },
+  "scripts": {
+    "test": "node --test"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

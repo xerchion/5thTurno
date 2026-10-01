@@ -1,0 +1,16 @@
+# Dependencias y entornos
+node_modules/
+venv/
+.venv/
+__pycache__/
+
+# Editores
+.vscode/
+.idea/
+
+# Sistema operativo
+.DS_Store
+Thumbs.db
+
+# Registros
+*.log
