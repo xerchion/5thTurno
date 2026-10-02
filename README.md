@@ -115,4 +115,4 @@ HTML, CSS y JavaScript sin librerías ni proceso de compilación. La tipografía
 
 ## Licencia
 
-[MIT](LICENSE) © Sergio Ucedo · [Portfolio](https://xerchion.github.io/portfolio-web/)
+[MIT](LICENSE) © Sergio Ucedo · [Portfolio](https://xerchion.github.io/webPortfolio/)

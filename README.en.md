@@ -119,4 +119,4 @@ HTML, CSS and JavaScript with no libraries and no build step. The Inter typeface
 
 ## License
 
-[MIT](LICENSE) © Sergio Ucedo · [Portfolio](https://xerchion.github.io/portfolio-web/)
+[MIT](LICENSE) © Sergio Ucedo · [Portfolio](https://xerchion.github.io/webPortfolio/)
